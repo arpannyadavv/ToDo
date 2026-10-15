@@ -1,0 +1,17 @@
+{
+  "name": "todo-app-backend",
+  "version": "1.0.0",
+  "description": "Simple To-Do app with Express backend ready for Render deployment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

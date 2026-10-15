@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clean & Simple To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="todo-card">
+    <!-- Header Section -->
+    <header class="app-header">
+      <h1>My To-Do List</h1>
+      <p class="subtitle">Keep track of your daily tasks</p>
+    </header>
+
+    <!-- Input Form Section -->
+    <form id="todo-form" class="todo-form">
+      <input type="text" id="task-input" placeholder="What do you need to do today?" autocomplete="off" required />
+      <button type="submit" id="add-btn">Add Task</button>
+    </form>
+
+    <!-- Status & Task Count Bar -->
+    <div class="stats-bar">
+      <span id="task-count">0 tasks</span>
+      <button type="button" id="clear-completed-btn" class="clear-btn">Clear Completed</button>
+    </div>
+
+    <!-- Task List Container -->
+    <ul id="task-list" class="task-list">
+      <!-- Tasks will be dynamically inserted here using JavaScript -->
+    </ul>
+
+    <!-- Empty State (shown when there are no tasks) -->
+    <div id="empty-state" class="empty-state">
+      <p>✨ No tasks yet! Add your first task above.</p>
+    </div>
+  </main>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
